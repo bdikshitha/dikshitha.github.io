@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        function convertArrayToString(array){
+            var delimitedArray = array.join(",");
+            return delimitedArray;
+        }
+        
+        var intArray = [1, 2, 3, 4];
+        console.log("Array of integers:", convertArrayToString(intArray));
+
+        var mixedArray = [1, "2", 3, "4"];
+        console.log("Array of mixed integers and strings:", convertArrayToString(mixedArray));
+        
+        var stringArray = ["1", "2", "3", "4"];
+        console.log("Array of strings:", convertArrayToString(stringArray));
+    </script>
+  </head>
+  <body></body>
+</html>

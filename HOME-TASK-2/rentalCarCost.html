@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function calculateRentalCost(numDays) {
+        var costPerDay = 40;
+        var discountBetweenThreeToSixDays = 20;
+        var discountMoreThanSevenDays = 50;
+        var totalCost = costPerDay * numDays;
+        
+        if (numDays >= 3 && numDays < 7) {
+          totalCost -= discountBetweenThreeToSixDays;
+        }
+        else if (numDays >= 7) {
+          totalCost -= discountMoreThanSevenDays;
+        }
+        
+        return totalCost;
+      }
+      
+      var totalCostForFiveDays = calculateRentalCost(5);
+      console.log("Price for 5 days", totalCostForFiveDays);
+      
+      var totalCostForThreeDays = calculateRentalCost(3);
+      console.log("Price for 3 days", totalCostForThreeDays);
+      
+      var totalCostForTwoDays = calculateRentalCost(2);
+      console.log("Price for 2 days", totalCostForTwoDays);
+      
+      var totalCostForEightDays = calculateRentalCost(8);
+      console.log("Price for 8 days", totalCostForEightDays);
+    </script>
+  </head>
+ <body></body>
+</html>

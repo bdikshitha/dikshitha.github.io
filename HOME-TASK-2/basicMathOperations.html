@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        function performBasicOperation(operator, operand1, operand2)
+        {
+            if(operator == "+")
+            {
+                return operand1 + operand2;
+            }
+            else if(operator == "-")
+            {
+                return operand1 - operand2;
+            }
+            else if(operator == "*")
+            {
+                return operand1 * operand2;
+            }
+            else if(operator == "/")
+            {
+                return operand1 / operand2;
+            }
+        }
+        
+        var firstIntegerOperand = 1;
+        var secondIntegerOperand = 2;
+        var thirdFloatOperand = 3.5;
+        var additionOperator = "+";
+        var subtractionOperator = "-";
+        var multiplicationOperator = "*";
+        var divisionOperator = "/";
+        
+        var result1 = performBasicOperation(additionOperator, firstIntegerOperand, secondIntegerOperand);
+        var result2 = performBasicOperation(subtractionOperator, firstIntegerOperand, secondIntegerOperand);
+        var result3 = performBasicOperation(multiplicationOperator, firstIntegerOperand, secondIntegerOperand);
+        var result4 = performBasicOperation(divisionOperator, firstIntegerOperand, secondIntegerOperand);
+
+        var result5 = performBasicOperation(additionOperator, firstIntegerOperand, thirdFloatOperand);
+        var result6 = performBasicOperation(subtractionOperator, firstIntegerOperand, thirdFloatOperand);
+        var result7 = performBasicOperation(multiplicationOperator, firstIntegerOperand, thirdFloatOperand);
+        var result8 = performBasicOperation(divisionOperator, firstIntegerOperand, thirdFloatOperand);
+
+        console.log("Result of " + firstIntegerOperand + additionOperator + secondIntegerOperand + " = " + result1);
+        console.log("Result of " + firstIntegerOperand + subtractionOperator + secondIntegerOperand + " = " + result2);
+        console.log("Result of " + firstIntegerOperand + multiplicationOperator + secondIntegerOperand + " = " + result3);
+        console.log("Result of " + firstIntegerOperand + divisionOperator + secondIntegerOperand + " = " + result4);
+
+        console.log("Result of " + firstIntegerOperand + additionOperator + thirdFloatOperand + " = " + result5);
+        console.log("Result of " + firstIntegerOperand + subtractionOperator + thirdFloatOperand + " = " + result6);
+        console.log("Result of " + firstIntegerOperand + multiplicationOperator + thirdFloatOperand + " = " + result7);
+        console.log("Result of " + firstIntegerOperand + divisionOperator + thirdFloatOperand + " = " + result8);
+    </script>
+  </head>
+ <body></body>
+</html>
